@@ -1,1 +1,1031 @@
-{"interfaceLanguages":{"swift":[{"children":[{"title":"Supporting Types","type":"groupMarker"},{"children":[{"title":"Initializers","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/nonetype\/init()","title":"init()","type":"init"}],"path":"\/documentation\/bidirectionalstream\/nonetype","title":"NoneType","type":"struct"},{"children":[{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/stopiteration\/value","title":"var value: ReturnT","type":"property"},{"title":"Default Implementations","type":"groupMarker"},{"children":[{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/stopiteration\/localizeddescription","title":"var localizedDescription: String","type":"property"}],"path":"\/documentation\/bidirectionalstream\/stopiteration\/error-implementations","title":"Error Implementations","type":"symbol"}],"path":"\/documentation\/bidirectionalstream\/stopiteration","title":"StopIteration","type":"struct"},{"children":[{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/terminated\/columnnumber","title":"var columnNumber: Int","type":"property"},{"path":"\/documentation\/bidirectionalstream\/terminated\/error","title":"var error: any Error","type":"property"},{"path":"\/documentation\/bidirectionalstream\/terminated\/filename","title":"var fileName: String","type":"property"},{"path":"\/documentation\/bidirectionalstream\/terminated\/functionname","title":"var functionName: String","type":"property"},{"path":"\/documentation\/bidirectionalstream\/terminated\/linenumber","title":"var lineNumber: Int","type":"property"},{"path":"\/documentation\/bidirectionalstream\/terminated\/localizeddescription","title":"var localizedDescription: String","type":"property"}],"path":"\/documentation\/bidirectionalstream\/terminated","title":"Terminated","type":"struct"},{"children":[{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/wrongstreamuse\/message","title":"var message: String","type":"property"},{"title":"Default Implementations","type":"groupMarker"},{"children":[{"title":"Instance Properties","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/wrongstreamuse\/localizeddescription","title":"var localizedDescription: String","type":"property"}],"path":"\/documentation\/bidirectionalstream\/wrongstreamuse\/error-implementations","title":"Error Implementations","type":"symbol"}],"path":"\/documentation\/bidirectionalstream\/wrongstreamuse","title":"WrongStreamUse","type":"struct"},{"children":[{"title":"Initializers","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/init(value:)","title":"init(value: Int)","type":"init"},{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/signal()","title":"func signal() async","type":"method"},{"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/wait()","title":"func wait() async","type":"method"},{"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/wait(timeout:)","title":"func wait(timeout: DispatchTime) async -> DispatchTimeoutResult","type":"method"},{"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/wait(walltimeout:)","title":"func wait(wallTimeout: DispatchWallTime) async -> DispatchTimeoutResult","type":"method"},{"title":"Default Implementations","type":"groupMarker"},{"children":[{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/assertisolated(_:file:line:)","title":"func assertIsolated(() -> String, file: StaticString, line: UInt)","type":"method"},{"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/assumeisolated(_:file:line:)","title":"func assumeIsolated<T>((isolated Self) throws -> T, file: StaticString, line: UInt) rethrows -> T","type":"method"},{"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/preconditionisolated(_:file:line:)","title":"func preconditionIsolated(() -> String, file: StaticString, line: UInt)","type":"method"}],"path":"\/documentation\/bidirectionalstream\/asyncsemaphore\/actor-implementations","title":"Actor Implementations","type":"symbol"}],"path":"\/documentation\/bidirectionalstream\/asyncsemaphore","title":"AsyncSemaphore","type":"class"},{"title":"BidirectionalStream","type":"groupMarker"},{"children":[{"title":"Classes","type":"groupMarker"},{"children":[{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/continuation\/return(_:)","title":"func `return`(ReturnT)","type":"method"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/continuation\/throw(error:filename:functionname:linenumber:columnnumber:)","title":"func `throw`(error: any Error, fileName: String, functionName: String, lineNumber: Int, columnNumber: Int)","type":"method"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/continuation\/yield(_:)","title":"func yield(YieldT) -> SendT","type":"method"}],"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/continuation","title":"BidirectionalSyncStream.Continuation","type":"class"},{"title":"Initializers","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/init(_:_:_:_:)","title":"init(YieldT.Type, SendT.Type, ReturnT.Type, (BidirectionalSyncStream<YieldT, SendT, ReturnT>.Continuation) -> Void)","type":"init"},{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/next()","title":"func next() throws -> YieldT","type":"method"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/send(_:)","title":"func send(SendT) throws -> YieldT","type":"method"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/tosyncstream()","title":"func toSyncStream() -> SyncStream<YieldT>","type":"method"},{"title":"Type Methods","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream\/makestream(_:_:_:)","title":"static func makeStream(YieldT.Type, SendT.Type, ReturnT.Type) -> (stream: BidirectionalSyncStream<YieldT, SendT, ReturnT>, continuation: BidirectionalSyncStream<YieldT, SendT, ReturnT>.Continuation)","type":"method"}],"path":"\/documentation\/bidirectionalstream\/bidirectionalsyncstream","title":"BidirectionalSyncStream","type":"class"},{"children":[{"title":"Classes","type":"groupMarker"},{"children":[{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/continuation\/return(_:)","title":"func `return`(ReturnT) async","type":"method"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/continuation\/throw(error:filename:functionname:linenumber:columnnumber:)","title":"func `throw`(error: any Error, fileName: String, functionName: String, lineNumber: Int, columnNumber: Int) async","type":"method"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/continuation\/yield(_:)","title":"func yield(YieldT) async -> SendT","type":"method"}],"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/continuation","title":"BidirectionalAsyncStream.Continuation","type":"class"},{"title":"Initializers","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/init(_:_:_:_:)","title":"init(YieldT.Type, SendT.Type, ReturnT.Type, (BidirectionalAsyncStream<YieldT, SendT, ReturnT>.Continuation) async -> Void)","type":"init"},{"title":"Instance Methods","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/next()","title":"func next() async throws -> YieldT","type":"method"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/send(_:)","title":"func send(SendT) async throws -> YieldT","type":"method"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/toasyncstream()","title":"func toAsyncStream() async -> AsyncStream<YieldT>","type":"method"},{"title":"Type Methods","type":"groupMarker"},{"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream\/makestream(_:_:_:)","title":"static func makeStream(YieldT.Type, SendT.Type, ReturnT.Type) -> (stream: BidirectionalAsyncStream<YieldT, SendT, ReturnT>, continuation: BidirectionalAsyncStream<YieldT, SendT, ReturnT>.Continuation)","type":"method"}],"path":"\/documentation\/bidirectionalstream\/bidirectionalasyncstream","title":"BidirectionalAsyncStream","type":"class"}],"path":"\/documentation\/bidirectionalstream","title":"BidirectionalStream","type":"module"}]},"schemaVersion":{"major":0,"minor":1,"patch":1}}
+{
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "path" : "\/documentation\/syncstream\/syncstream",
+            "title" : "SyncStream",
+            "type" : "class",
+            "children" : [
+              {
+                "title" : "Creating a Continuation-Based Stream",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/init(_:_:)",
+                "title" : "init(Element.Type, (SyncStream<Element>.Continuation) -> Void)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/init(unfolding:)",
+                "title" : "convenience init(unfolding: () -> Element?)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/continuation",
+                "title" : "SyncStream.Continuation",
+                "type" : "class",
+                "children" : [
+                  {
+                    "title" : "Producing Elements",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/continuation\/yield(_:)",
+                    "title" : "func yield(Element)",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Finish the Stream",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/continuation\/finish()",
+                    "title" : "func finish()",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/continuation\/isfinished",
+                    "title" : "var isFinished: Bool",
+                    "type" : "property"
+                  }
+                ]
+              },
+              {
+                "title" : "Finding Elements",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/contains(_:)",
+                "title" : "func contains(Self.Element) -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/contains(where:)",
+                "title" : "func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/allsatisfy(_:)",
+                "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/first(where:)",
+                "title" : "func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/min()",
+                "title" : "func min() -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/min(by:)",
+                "title" : "func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/max()",
+                "title" : "func max() -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/max(by:)",
+                "title" : "func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "title" : "Selecting Elements",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/prefix(_:)",
+                "title" : "func prefix(Int) -> PrefixSequence<Self>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/prefix(while:)",
+                "title" : "func prefix(while: (Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                "type" : "method"
+              },
+              {
+                "title" : "Extracting Elements",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/dropfirst(_:)",
+                "title" : "func dropFirst(Int) -> DropFirstSequence<Self>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/drop(while:)",
+                "title" : "func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/filter(_:)-6h5ix",
+                "title" : "func filter((Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/filter(_:)-7wb05",
+                "title" : "func filter(Predicate<Self.Element>) throws -> [Self.Element]",
+                "type" : "method"
+              },
+              {
+                "title" : "Transforming a Sequence",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/map(_:)",
+                "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/compactmap(_:)",
+                "title" : "func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/flatmap(_:)-uifn",
+                "title" : "func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/flatmap(_:)-5btn7",
+                "title" : "func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/reduce(_:_:)",
+                "title" : "func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/reduce(into:_:)",
+                "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result",
+                "type" : "method"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/makeiterator()",
+                "title" : "func makeIterator() -> SyncStream<Element>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/next()",
+                "title" : "func next() -> Element?",
+                "type" : "method"
+              },
+              {
+                "title" : "Type Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/makestream(of:)",
+                "title" : "static func makeStream(of: Element.Type) -> (stream: SyncStream<Element>, continuation: SyncStream<Element>.Continuation)",
+                "type" : "method"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/sequence-implementations",
+                "title" : "Sequence Implementations",
+                "type" : "symbol",
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/lazy",
+                    "title" : "var lazy: LazySequence<Self>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/publisher",
+                    "title" : "var publisher: Publishers.Sequence<Self, Never>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/underestimatedcount",
+                    "title" : "var underestimatedCount: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/allsatisfy(_:)",
+                    "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/compactmap(_:)",
+                    "title" : "func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/compare(_:_:)",
+                    "title" : "func compare<Comparator>(Comparator.Compared, Comparator.Compared) -> ComparisonResult",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/contains(_:)",
+                    "title" : "func contains(Self.Element) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/contains(where:)",
+                    "title" : "func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/drop(while:)",
+                    "title" : "func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/dropfirst(_:)",
+                    "title" : "func dropFirst(Int) -> DropFirstSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/droplast(_:)",
+                    "title" : "func dropLast(Int) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/elementsequal(_:)",
+                    "title" : "func elementsEqual<OtherSequence>(OtherSequence) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/elementsequal(_:by:)",
+                    "title" : "func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/enumerated()",
+                    "title" : "func enumerated() -> EnumeratedSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/filter(_:)-6h5ix",
+                    "title" : "func filter((Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/filter(_:)-7wb05",
+                    "title" : "func filter(Predicate<Self.Element>) throws -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/first(where:)",
+                    "title" : "func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/flatmap(_:)-5btn7",
+                    "title" : "func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/flatmap(_:)-uifn",
+                    "title" : "func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/foreach(_:)",
+                    "title" : "func forEach((Self.Element) throws -> Void) rethrows",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/formatted()",
+                    "title" : "func formatted() -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/formatted(_:)",
+                    "title" : "func formatted<S>(S) -> S.FormatOutput",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/joined()",
+                    "title" : "func joined() -> FlattenSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/joined(separator:)-2uic",
+                    "title" : "func joined<Separator>(separator: Separator) -> JoinedSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/joined(separator:)-3ohkg",
+                    "title" : "func joined(separator: String) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/lexicographicallyprecedes(_:)",
+                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/lexicographicallyprecedes(_:by:)",
+                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/map(_:)",
+                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/max()",
+                    "title" : "func max() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/max(by:)",
+                    "title" : "func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/min()",
+                    "title" : "func min() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/min(by:)",
+                    "title" : "func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/prefix(_:)",
+                    "title" : "func prefix(Int) -> PrefixSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/prefix(while:)",
+                    "title" : "func prefix(while: (Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/reduce(_:_:)",
+                    "title" : "func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/reduce(into:_:)",
+                    "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/reversed()",
+                    "title" : "func reversed() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/shuffled()",
+                    "title" : "func shuffled() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/shuffled(using:)",
+                    "title" : "func shuffled<T>(using: inout T) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/sorted()",
+                    "title" : "func sorted() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/sorted(by:)",
+                    "title" : "func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/sorted(using:)-5vf8y",
+                    "title" : "func sorted<S, Comparator>(using: S) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/sorted(using:)-9mgeo",
+                    "title" : "func sorted<Comparator>(using: Comparator) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/split(maxsplits:omittingemptysubsequences:whereseparator:)",
+                    "title" : "func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [ArraySlice<Self.Element>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/split(separator:maxsplits:omittingemptysubsequences:)",
+                    "title" : "func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [ArraySlice<Self.Element>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/starts(with:)",
+                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/starts(with:by:)",
+                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/suffix(_:)",
+                    "title" : "func suffix(Int) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/withcontiguousstorageifavailable(_:)",
+                    "title" : "func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?",
+                    "type" : "method"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path" : "\/documentation\/syncstream\/syncstream\/continuation",
+            "title" : "SyncStream.Continuation",
+            "type" : "class",
+            "children" : [
+              {
+                "title" : "Producing Elements",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/continuation\/yield(_:)",
+                "title" : "func yield(Element)",
+                "type" : "method"
+              },
+              {
+                "title" : "Finish the Stream",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/continuation\/finish()",
+                "title" : "func finish()",
+                "type" : "method"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/continuation\/isfinished",
+                "title" : "var isFinished: Bool",
+                "type" : "property"
+              }
+            ]
+          }
+        ],
+        "type" : "module",
+        "title" : "SyncStream",
+        "path" : "\/documentation\/syncstream"
+      },
+      {
+        "type" : "module",
+        "children" : [
+          {
+            "path" : "\/documentation\/syncstream\/syncstream",
+            "title" : "SyncStream",
+            "type" : "class",
+            "children" : [
+              {
+                "title" : "Creating a Continuation-Based Stream",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/init(_:_:)",
+                "title" : "init(Element.Type, (SyncStream<Element>.Continuation) -> Void)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/init(unfolding:)",
+                "title" : "convenience init(unfolding: () -> Element?)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/continuation",
+                "title" : "SyncStream.Continuation",
+                "type" : "class",
+                "children" : [
+                  {
+                    "title" : "Producing Elements",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/continuation\/yield(_:)",
+                    "title" : "func yield(Element)",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Finish the Stream",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/continuation\/finish()",
+                    "title" : "func finish()",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/continuation\/isfinished",
+                    "title" : "var isFinished: Bool",
+                    "type" : "property"
+                  }
+                ]
+              },
+              {
+                "title" : "Finding Elements",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/contains(_:)",
+                "title" : "func contains(Self.Element) -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/contains(where:)",
+                "title" : "func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/allsatisfy(_:)",
+                "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/first(where:)",
+                "title" : "func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/min()",
+                "title" : "func min() -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/min(by:)",
+                "title" : "func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/max()",
+                "title" : "func max() -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/max(by:)",
+                "title" : "func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                "type" : "method"
+              },
+              {
+                "title" : "Selecting Elements",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/prefix(_:)",
+                "title" : "func prefix(Int) -> PrefixSequence<Self>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/prefix(while:)",
+                "title" : "func prefix(while: (Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                "type" : "method"
+              },
+              {
+                "title" : "Extracting Elements",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/dropfirst(_:)",
+                "title" : "func dropFirst(Int) -> DropFirstSequence<Self>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/drop(while:)",
+                "title" : "func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/filter(_:)-6h5ix",
+                "title" : "func filter((Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/filter(_:)-7wb05",
+                "title" : "func filter(Predicate<Self.Element>) throws -> [Self.Element]",
+                "type" : "method"
+              },
+              {
+                "title" : "Transforming a Sequence",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/map(_:)",
+                "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/compactmap(_:)",
+                "title" : "func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/flatmap(_:)-uifn",
+                "title" : "func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/flatmap(_:)-5btn7",
+                "title" : "func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/reduce(_:_:)",
+                "title" : "func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/reduce(into:_:)",
+                "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result",
+                "type" : "method"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/makeiterator()",
+                "title" : "func makeIterator() -> SyncStream<Element>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/next()",
+                "title" : "func next() -> Element?",
+                "type" : "method"
+              },
+              {
+                "title" : "Type Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/makestream(of:)",
+                "title" : "static func makeStream(of: Element.Type) -> (stream: SyncStream<Element>, continuation: SyncStream<Element>.Continuation)",
+                "type" : "method"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/sequence-implementations",
+                "title" : "Sequence Implementations",
+                "type" : "symbol",
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/lazy",
+                    "title" : "var lazy: LazySequence<Self>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/publisher",
+                    "title" : "var publisher: Publishers.Sequence<Self, Never>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/underestimatedcount",
+                    "title" : "var underestimatedCount: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/allsatisfy(_:)",
+                    "title" : "func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/compactmap(_:)",
+                    "title" : "func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/compare(_:_:)",
+                    "title" : "func compare<Comparator>(Comparator.Compared, Comparator.Compared) -> ComparisonResult",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/contains(_:)",
+                    "title" : "func contains(Self.Element) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/contains(where:)",
+                    "title" : "func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/drop(while:)",
+                    "title" : "func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/dropfirst(_:)",
+                    "title" : "func dropFirst(Int) -> DropFirstSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/droplast(_:)",
+                    "title" : "func dropLast(Int) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/elementsequal(_:)",
+                    "title" : "func elementsEqual<OtherSequence>(OtherSequence) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/elementsequal(_:by:)",
+                    "title" : "func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/enumerated()",
+                    "title" : "func enumerated() -> EnumeratedSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/filter(_:)-6h5ix",
+                    "title" : "func filter((Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/filter(_:)-7wb05",
+                    "title" : "func filter(Predicate<Self.Element>) throws -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/first(where:)",
+                    "title" : "func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/flatmap(_:)-5btn7",
+                    "title" : "func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/flatmap(_:)-uifn",
+                    "title" : "func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/foreach(_:)",
+                    "title" : "func forEach((Self.Element) throws -> Void) rethrows",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/formatted()",
+                    "title" : "func formatted() -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/formatted(_:)",
+                    "title" : "func formatted<S>(S) -> S.FormatOutput",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/joined()",
+                    "title" : "func joined() -> FlattenSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/joined(separator:)-2uic",
+                    "title" : "func joined<Separator>(separator: Separator) -> JoinedSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/joined(separator:)-3ohkg",
+                    "title" : "func joined(separator: String) -> String",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/lexicographicallyprecedes(_:)",
+                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/lexicographicallyprecedes(_:by:)",
+                    "title" : "func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/map(_:)",
+                    "title" : "func map<T>((Self.Element) throws -> T) rethrows -> [T]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/max()",
+                    "title" : "func max() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/max(by:)",
+                    "title" : "func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/min()",
+                    "title" : "func min() -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/min(by:)",
+                    "title" : "func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/prefix(_:)",
+                    "title" : "func prefix(Int) -> PrefixSequence<Self>",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/prefix(while:)",
+                    "title" : "func prefix(while: (Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/reduce(_:_:)",
+                    "title" : "func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/reduce(into:_:)",
+                    "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/reversed()",
+                    "title" : "func reversed() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/shuffled()",
+                    "title" : "func shuffled() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/shuffled(using:)",
+                    "title" : "func shuffled<T>(using: inout T) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/sorted()",
+                    "title" : "func sorted() -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/sorted(by:)",
+                    "title" : "func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/sorted(using:)-5vf8y",
+                    "title" : "func sorted<S, Comparator>(using: S) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/sorted(using:)-9mgeo",
+                    "title" : "func sorted<Comparator>(using: Comparator) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/split(maxsplits:omittingemptysubsequences:whereseparator:)",
+                    "title" : "func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [ArraySlice<Self.Element>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/split(separator:maxsplits:omittingemptysubsequences:)",
+                    "title" : "func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [ArraySlice<Self.Element>]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/starts(with:)",
+                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/starts(with:by:)",
+                    "title" : "func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/suffix(_:)",
+                    "title" : "func suffix(Int) -> [Self.Element]",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/syncstream\/syncstream\/withcontiguousstorageifavailable(_:)",
+                    "title" : "func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?",
+                    "type" : "method"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path" : "\/documentation\/syncstream\/syncstream\/continuation",
+            "title" : "SyncStream.Continuation",
+            "type" : "class",
+            "children" : [
+              {
+                "title" : "Producing Elements",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/continuation\/yield(_:)",
+                "title" : "func yield(Element)",
+                "type" : "method"
+              },
+              {
+                "title" : "Finish the Stream",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/continuation\/finish()",
+                "title" : "func finish()",
+                "type" : "method"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/syncstream\/syncstream\/continuation\/isfinished",
+                "title" : "var isFinished: Bool",
+                "type" : "property"
+              }
+            ]
+          }
+        ],
+        "path" : "\/documentation\/syncstream",
+        "title" : "SyncStream"
+      },
+      {
+        "type" : "module",
+        "path" : "\/documentation\/streamutilities",
+        "title" : "StreamUtilities",
+        "children" : [
+          {
+            "title" : "SyncStream",
+            "type" : "module",
+            "path" : "..\/syncstream"
+          },
+          {
+            "title" : "BidirectionalStream",
+            "path" : "..\/bidirectionalstream",
+            "type" : "module"
+          }
+        ]
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  },
+  "includedArchiveIdentifiers" : [
+    "StreamUtilities",
+    "SyncStream",
+    "BidirectionalStream"
+  ]
+}
