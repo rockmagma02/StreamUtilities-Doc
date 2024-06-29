@@ -1,0 +1,35 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    # Runs everyday at 8:00 AM
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: macos-13
+    steps:
+      - uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: '5'
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: build
+        run: swift build
+      - name: generateDoc
+        run: make doc
+      - name: generateCNAME
+        run: echo "${{ vars.CNAME }}" > ./Documentation/CNAME
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Documentation  # default: public
