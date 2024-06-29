@@ -4,17 +4,19 @@
     "SyncStream",
     "BidirectionalStream"
   ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  },
   "interfaceLanguages" : {
     "swift" : [
       {
-        "path" : "\/documentation\/syncstream",
-        "title" : "SyncStream",
-        "type" : "module",
         "children" : [
           {
-            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
-            "type" : "module"
+            "type" : "module",
+            "path" : "..\/streamutilities"
           },
           {
             "path" : "\/documentation\/syncstream\/syncstream",
@@ -508,15 +510,17 @@
               }
             ]
           }
-        ]
+        ],
+        "path" : "\/documentation\/syncstream",
+        "title" : "SyncStream",
+        "type" : "module"
       },
       {
-        "title" : "BidirectionalStream",
         "children" : [
           {
-            "type" : "module",
+            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
-            "path" : "..\/streamutilities"
+            "type" : "module"
           },
           {
             "title" : "Supporting Types",
@@ -875,14 +879,15 @@
           }
         ],
         "type" : "module",
-        "path" : "\/documentation\/bidirectionalstream"
+        "path" : "\/documentation\/bidirectionalstream",
+        "title" : "BidirectionalStream"
       },
       {
         "children" : [
           {
+            "type" : "module",
             "path" : "..\/syncstream",
-            "title" : "SyncStream",
-            "type" : "module"
+            "title" : "SyncStream"
           },
           {
             "title" : "BidirectionalStream",
@@ -890,15 +895,10 @@
             "type" : "module"
           }
         ],
-        "path" : "\/documentation\/streamutilities",
+        "title" : "StreamUtilities",
         "type" : "module",
-        "title" : "StreamUtilities"
+        "path" : "\/documentation\/streamutilities"
       }
     ]
-  },
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
   }
 }
