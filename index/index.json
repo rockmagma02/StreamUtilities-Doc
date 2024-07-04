@@ -1,20 +1,15 @@
 {
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
-  },
   "interfaceLanguages" : {
     "swift" : [
       {
-        "title" : "SyncStream",
         "type" : "module",
         "path" : "\/documentation\/syncstream",
+        "title" : "SyncStream",
         "children" : [
           {
             "type" : "module",
-            "title" : "Back to StreamUtilities",
-            "path" : "..\/streamutilities"
+            "path" : "..\/streamutilities",
+            "title" : "Back to StreamUtilities"
           },
           {
             "path" : "\/documentation\/syncstream\/syncstream",
@@ -511,13 +506,11 @@
         ]
       },
       {
-        "type" : "module",
-        "title" : "BidirectionalStream",
         "children" : [
           {
-            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
-            "type" : "module"
+            "type" : "module",
+            "path" : "..\/streamutilities"
           },
           {
             "title" : "Supporting Types",
@@ -875,16 +868,16 @@
             ]
           }
         ],
+        "type" : "module",
+        "title" : "BidirectionalStream",
         "path" : "\/documentation\/bidirectionalstream"
       },
       {
-        "path" : "\/documentation\/streamutilities",
-        "type" : "module",
         "children" : [
           {
             "path" : "..\/syncstream",
-            "type" : "module",
-            "title" : "SyncStream"
+            "title" : "SyncStream",
+            "type" : "module"
           },
           {
             "type" : "module",
@@ -892,6 +885,8 @@
             "title" : "BidirectionalStream"
           }
         ],
+        "type" : "module",
+        "path" : "\/documentation\/streamutilities",
         "title" : "StreamUtilities"
       }
     ]
@@ -900,5 +895,10 @@
     "StreamUtilities",
     "SyncStream",
     "BidirectionalStream"
-  ]
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  }
 }
