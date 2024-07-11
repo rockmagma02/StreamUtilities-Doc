@@ -1,14 +1,14 @@
 {
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
-  },
   "includedArchiveIdentifiers" : [
     "StreamUtilities",
     "SyncStream",
     "BidirectionalStream"
   ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  },
   "interfaceLanguages" : {
     "swift" : [
       {
@@ -516,13 +516,11 @@
         "type" : "module"
       },
       {
-        "type" : "module",
-        "title" : "BidirectionalStream",
         "children" : [
           {
-            "title" : "Back to StreamUtilities",
             "path" : "..\/streamutilities",
-            "type" : "module"
+            "type" : "module",
+            "title" : "Back to StreamUtilities"
           },
           {
             "title" : "Supporting Types",
@@ -880,24 +878,26 @@
             ]
           }
         ],
+        "type" : "module",
+        "title" : "BidirectionalStream",
         "path" : "\/documentation\/bidirectionalstream"
       },
       {
-        "path" : "\/documentation\/streamutilities",
         "children" : [
           {
+            "type" : "module",
             "path" : "..\/syncstream",
-            "title" : "SyncStream",
-            "type" : "module"
+            "title" : "SyncStream"
           },
           {
-            "type" : "module",
             "path" : "..\/bidirectionalstream",
-            "title" : "BidirectionalStream"
+            "title" : "BidirectionalStream",
+            "type" : "module"
           }
         ],
         "title" : "StreamUtilities",
-        "type" : "module"
+        "type" : "module",
+        "path" : "\/documentation\/streamutilities"
       }
     ]
   }
