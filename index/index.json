@@ -1,4 +1,9 @@
 {
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  },
   "includedArchiveIdentifiers" : [
     "StreamUtilities",
     "SyncStream",
@@ -8,11 +13,10 @@
     "swift" : [
       {
         "type" : "module",
-        "title" : "SyncStream",
         "children" : [
           {
-            "path" : "..\/streamutilities",
             "type" : "module",
+            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities"
           },
           {
@@ -508,17 +512,17 @@
             ]
           }
         ],
+        "title" : "SyncStream",
         "path" : "\/documentation\/syncstream"
       },
       {
-        "path" : "\/documentation\/bidirectionalstream",
-        "type" : "module",
         "title" : "BidirectionalStream",
+        "type" : "module",
         "children" : [
           {
-            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
-            "type" : "module"
+            "type" : "module",
+            "path" : "..\/streamutilities"
           },
           {
             "title" : "Supporting Types",
@@ -875,30 +879,26 @@
               }
             ]
           }
-        ]
+        ],
+        "path" : "\/documentation\/bidirectionalstream"
       },
       {
+        "path" : "\/documentation\/streamutilities",
+        "title" : "StreamUtilities",
         "children" : [
           {
-            "type" : "module",
             "path" : "..\/syncstream",
-            "title" : "SyncStream"
+            "title" : "SyncStream",
+            "type" : "module"
           },
           {
-            "path" : "..\/bidirectionalstream",
+            "type" : "module",
             "title" : "BidirectionalStream",
-            "type" : "module"
+            "path" : "..\/bidirectionalstream"
           }
         ],
-        "title" : "StreamUtilities",
-        "path" : "\/documentation\/streamutilities",
         "type" : "module"
       }
     ]
-  },
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
   }
 }
