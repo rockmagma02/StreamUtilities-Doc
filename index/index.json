@@ -2,6 +2,7 @@
   "interfaceLanguages" : {
     "swift" : [
       {
+        "type" : "module",
         "children" : [
           {
             "path" : "..\/streamutilities",
@@ -502,15 +503,17 @@
           }
         ],
         "path" : "\/documentation\/syncstream",
-        "type" : "module",
         "title" : "SyncStream"
       },
       {
+        "path" : "\/documentation\/bidirectionalstream",
+        "title" : "BidirectionalStream",
+        "type" : "module",
         "children" : [
           {
             "path" : "..\/streamutilities",
-            "title" : "Back to StreamUtilities",
-            "type" : "module"
+            "type" : "module",
+            "title" : "Back to StreamUtilities"
           },
           {
             "title" : "Supporting Types",
@@ -867,20 +870,17 @@
               }
             ]
           }
-        ],
-        "type" : "module",
-        "title" : "BidirectionalStream",
-        "path" : "\/documentation\/bidirectionalstream"
+        ]
       },
       {
+        "path" : "\/documentation\/streamutilities",
         "title" : "StreamUtilities",
         "type" : "module",
-        "path" : "\/documentation\/streamutilities",
         "children" : [
           {
-            "path" : "..\/syncstream",
             "title" : "SyncStream",
-            "type" : "module"
+            "type" : "module",
+            "path" : "..\/syncstream"
           },
           {
             "path" : "..\/bidirectionalstream",
