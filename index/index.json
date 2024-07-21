@@ -1,20 +1,18 @@
 {
-  "includedArchiveIdentifiers" : [
-    "StreamUtilities",
-    "SyncStream",
-    "BidirectionalStream"
-  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  },
   "interfaceLanguages" : {
     "swift" : [
       {
-        "title" : "SyncStream",
         "type" : "module",
-        "path" : "\/documentation\/syncstream",
         "children" : [
           {
-            "title" : "Back to StreamUtilities",
+            "type" : "module",
             "path" : "..\/streamutilities",
-            "type" : "module"
+            "title" : "Back to StreamUtilities"
           },
           {
             "path" : "\/documentation\/syncstream\/syncstream",
@@ -508,9 +506,13 @@
               }
             ]
           }
-        ]
+        ],
+        "path" : "\/documentation\/syncstream",
+        "title" : "SyncStream"
       },
       {
+        "path" : "\/documentation\/bidirectionalstream",
+        "title" : "BidirectionalStream",
         "children" : [
           {
             "type" : "module",
@@ -873,32 +875,30 @@
             ]
           }
         ],
-        "path" : "\/documentation\/bidirectionalstream",
-        "type" : "module",
-        "title" : "BidirectionalStream"
+        "type" : "module"
       },
       {
         "type" : "module",
         "title" : "StreamUtilities",
-        "path" : "\/documentation\/streamutilities",
         "children" : [
           {
+            "title" : "SyncStream",
             "path" : "..\/syncstream",
-            "type" : "module",
-            "title" : "SyncStream"
+            "type" : "module"
           },
           {
-            "path" : "..\/bidirectionalstream",
+            "title" : "BidirectionalStream",
             "type" : "module",
-            "title" : "BidirectionalStream"
+            "path" : "..\/bidirectionalstream"
           }
-        ]
+        ],
+        "path" : "\/documentation\/streamutilities"
       }
     ]
   },
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
-  }
+  "includedArchiveIdentifiers" : [
+    "StreamUtilities",
+    "SyncStream",
+    "BidirectionalStream"
+  ]
 }
