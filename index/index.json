@@ -1,13 +1,22 @@
 {
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  },
+  "includedArchiveIdentifiers" : [
+    "StreamUtilities",
+    "SyncStream",
+    "BidirectionalStream"
+  ],
   "interfaceLanguages" : {
     "swift" : [
       {
-        "type" : "module",
         "children" : [
           {
-            "type" : "module",
             "title" : "Back to StreamUtilities",
-            "path" : "..\/streamutilities"
+            "path" : "..\/streamutilities",
+            "type" : "module"
           },
           {
             "path" : "\/documentation\/syncstream\/syncstream",
@@ -503,16 +512,16 @@
           }
         ],
         "path" : "\/documentation\/syncstream",
+        "type" : "module",
         "title" : "SyncStream"
       },
       {
         "path" : "\/documentation\/bidirectionalstream",
-        "type" : "module",
         "title" : "BidirectionalStream",
         "children" : [
           {
-            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
+            "path" : "..\/streamutilities",
             "type" : "module"
           },
           {
@@ -870,14 +879,17 @@
               }
             ]
           }
-        ]
+        ],
+        "type" : "module"
       },
       {
+        "title" : "StreamUtilities",
+        "type" : "module",
         "children" : [
           {
-            "title" : "SyncStream",
             "path" : "..\/syncstream",
-            "type" : "module"
+            "type" : "module",
+            "title" : "SyncStream"
           },
           {
             "type" : "module",
@@ -885,20 +897,8 @@
             "path" : "..\/bidirectionalstream"
           }
         ],
-        "path" : "\/documentation\/streamutilities",
-        "type" : "module",
-        "title" : "StreamUtilities"
+        "path" : "\/documentation\/streamutilities"
       }
     ]
-  },
-  "includedArchiveIdentifiers" : [
-    "StreamUtilities",
-    "SyncStream",
-    "BidirectionalStream"
-  ],
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
   }
 }
