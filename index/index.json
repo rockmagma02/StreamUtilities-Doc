@@ -1,17 +1,14 @@
 {
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
-  },
   "interfaceLanguages" : {
     "swift" : [
       {
+        "type" : "module",
+        "title" : "SyncStream",
         "children" : [
           {
+            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
-            "type" : "module",
-            "path" : "..\/streamutilities"
+            "type" : "module"
           },
           {
             "path" : "\/documentation\/syncstream\/syncstream",
@@ -506,16 +503,14 @@
             ]
           }
         ],
-        "type" : "module",
-        "title" : "SyncStream",
         "path" : "\/documentation\/syncstream"
       },
       {
         "children" : [
           {
             "path" : "..\/streamutilities",
-            "title" : "Back to StreamUtilities",
-            "type" : "module"
+            "type" : "module",
+            "title" : "Back to StreamUtilities"
           },
           {
             "title" : "Supporting Types",
@@ -873,28 +868,33 @@
             ]
           }
         ],
-        "title" : "BidirectionalStream",
         "type" : "module",
+        "title" : "BidirectionalStream",
         "path" : "\/documentation\/bidirectionalstream"
       },
       {
-        "title" : "StreamUtilities",
-        "type" : "module",
         "path" : "\/documentation\/streamutilities",
+        "type" : "module",
         "children" : [
           {
-            "title" : "SyncStream",
             "type" : "module",
-            "path" : "..\/syncstream"
+            "path" : "..\/syncstream",
+            "title" : "SyncStream"
           },
           {
-            "type" : "module",
             "title" : "BidirectionalStream",
+            "type" : "module",
             "path" : "..\/bidirectionalstream"
           }
-        ]
+        ],
+        "title" : "StreamUtilities"
       }
     ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
   },
   "includedArchiveIdentifiers" : [
     "StreamUtilities",
