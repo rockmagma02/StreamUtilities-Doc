@@ -1,9 +1,4 @@
 {
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
-  },
   "includedArchiveIdentifiers" : [
     "StreamUtilities",
     "SyncStream",
@@ -12,11 +7,12 @@
   "interfaceLanguages" : {
     "swift" : [
       {
+        "type" : "module",
         "children" : [
           {
+            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
-            "type" : "module",
-            "path" : "..\/streamutilities"
+            "type" : "module"
           },
           {
             "path" : "\/documentation\/syncstream\/syncstream",
@@ -512,18 +508,17 @@
           }
         ],
         "title" : "SyncStream",
-        "path" : "\/documentation\/syncstream",
-        "type" : "module"
+        "path" : "\/documentation\/syncstream"
       },
       {
         "type" : "module",
-        "path" : "\/documentation\/bidirectionalstream",
         "title" : "BidirectionalStream",
+        "path" : "\/documentation\/bidirectionalstream",
         "children" : [
           {
+            "title" : "Back to StreamUtilities",
             "type" : "module",
-            "path" : "..\/streamutilities",
-            "title" : "Back to StreamUtilities"
+            "path" : "..\/streamutilities"
           },
           {
             "title" : "Supporting Types",
@@ -885,7 +880,6 @@
       {
         "title" : "StreamUtilities",
         "type" : "module",
-        "path" : "\/documentation\/streamutilities",
         "children" : [
           {
             "title" : "SyncStream",
@@ -893,12 +887,18 @@
             "type" : "module"
           },
           {
+            "path" : "..\/bidirectionalstream",
             "title" : "BidirectionalStream",
-            "type" : "module",
-            "path" : "..\/bidirectionalstream"
+            "type" : "module"
           }
-        ]
+        ],
+        "path" : "\/documentation\/streamutilities"
       }
     ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
   }
 }
