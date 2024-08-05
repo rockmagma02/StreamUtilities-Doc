@@ -10,9 +10,9 @@
         "type" : "module",
         "children" : [
           {
-            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
-            "type" : "module"
+            "type" : "module",
+            "path" : "..\/streamutilities"
           },
           {
             "path" : "\/documentation\/syncstream\/syncstream",
@@ -511,14 +511,14 @@
         "path" : "\/documentation\/syncstream"
       },
       {
-        "type" : "module",
-        "title" : "BidirectionalStream",
         "path" : "\/documentation\/bidirectionalstream",
+        "title" : "BidirectionalStream",
+        "type" : "module",
         "children" : [
           {
-            "title" : "Back to StreamUtilities",
             "type" : "module",
-            "path" : "..\/streamutilities"
+            "path" : "..\/streamutilities",
+            "title" : "Back to StreamUtilities"
           },
           {
             "title" : "Supporting Types",
@@ -878,21 +878,21 @@
         ]
       },
       {
-        "title" : "StreamUtilities",
         "type" : "module",
         "children" : [
           {
             "title" : "SyncStream",
-            "path" : "..\/syncstream",
-            "type" : "module"
+            "type" : "module",
+            "path" : "..\/syncstream"
           },
           {
-            "path" : "..\/bidirectionalstream",
+            "type" : "module",
             "title" : "BidirectionalStream",
-            "type" : "module"
+            "path" : "..\/bidirectionalstream"
           }
         ],
-        "path" : "\/documentation\/streamutilities"
+        "path" : "\/documentation\/streamutilities",
+        "title" : "StreamUtilities"
       }
     ]
   },
