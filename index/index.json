@@ -1,14 +1,15 @@
 {
-  "schemaVersion" : {
-    "major" : 0,
-    "minor" : 1,
-    "patch" : 1
-  },
+  "includedArchiveIdentifiers" : [
+    "StreamUtilities",
+    "SyncStream",
+    "BidirectionalStream"
+  ],
   "interfaceLanguages" : {
     "swift" : [
       {
-        "type" : "module",
+        "title" : "SyncStream",
         "path" : "\/documentation\/syncstream",
+        "type" : "module",
         "children" : [
           {
             "path" : "..\/streamutilities",
@@ -507,17 +508,14 @@
               }
             ]
           }
-        ],
-        "title" : "SyncStream"
+        ]
       },
       {
-        "title" : "BidirectionalStream",
-        "path" : "\/documentation\/bidirectionalstream",
         "children" : [
           {
+            "path" : "..\/streamutilities",
             "title" : "Back to StreamUtilities",
-            "type" : "module",
-            "path" : "..\/streamutilities"
+            "type" : "module"
           },
           {
             "title" : "Supporting Types",
@@ -875,11 +873,14 @@
             ]
           }
         ],
-        "type" : "module"
+        "title" : "BidirectionalStream",
+        "type" : "module",
+        "path" : "\/documentation\/bidirectionalstream"
       },
       {
-        "title" : "StreamUtilities",
         "type" : "module",
+        "path" : "\/documentation\/streamutilities",
+        "title" : "StreamUtilities",
         "children" : [
           {
             "path" : "..\/syncstream",
@@ -888,17 +889,16 @@
           },
           {
             "title" : "BidirectionalStream",
-            "path" : "..\/bidirectionalstream",
-            "type" : "module"
+            "type" : "module",
+            "path" : "..\/bidirectionalstream"
           }
-        ],
-        "path" : "\/documentation\/streamutilities"
+        ]
       }
     ]
   },
-  "includedArchiveIdentifiers" : [
-    "StreamUtilities",
-    "SyncStream",
-    "BidirectionalStream"
-  ]
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 1
+  }
 }
